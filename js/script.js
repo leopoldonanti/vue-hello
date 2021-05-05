@@ -10,11 +10,14 @@ const app = new Vue ({
 
     data : {
       /* qui inseriso i miei dati per le variabili */
-      testo_stampato: "Lorem ipsum, dolor sit amet consectetur adipisicing elit",
-      
+      testo_stampato: "Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aspernatur veniam fugiat nemo quo illo velit",
+      messaggio_input: "giuseppe",
       colore_testo: "colore_default",
       immagine: "sfondo.jpg",
       flag: false,
+      flagimg: false,
+      visibile: "invisibile"
+      
     },
      
     methods : {
@@ -27,9 +30,20 @@ const app = new Vue ({
           this.colore_testo = "colore_default";
           this.flag = false;
         } 
-      }
+      },
+
+      /* immagine(){
+        if(this.flagimg === false){
+          this.visibile = "active"
+          this.flagimg = true;
+        }else{
+          this.visibile = "";
+          this.flagimg = false;
+        }
+      } */
     }
 
+    
     
 
   });

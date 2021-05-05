@@ -5,60 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="syle.css">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <style>
-    html{
-      font-family: Helvetica, sans-serif, sans-serif;
-      letter-spacing: 10px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      color: pink;
-      background-color: teal;
-      min-height: 100vh;
-      font-size: 30px;
-      line-height: 50px;
-    }
-    button{
-      text-align: center;
-      height: 200px;
-      width: 500px;
-      border-radius: 22px;
-      border: none;
-      color: teal;
-      outline: none;
-      font-family: Lucida Grande;
-      margin: 40px 0 40px 0;
-      background-color: white;
-      font-size: 40px;
-      }
-      button:active{
-        background-color: transparent;
-        color: rgb(255, 183, 0);
-        border: solid 1px rgb(255, 183, 0);
-      }
-      .colore_default{
-        color: rgb(255, 183, 0);
-      }
-
-      .colore_bottone{
-        color: rgb(255, 115, 139);
-      }
-
-      h1{
-        margin: auto;
-        width: 30%;
-        line-height: 30px;
-        font-size: 20px;
-        letter-spacing: 1px;
-      }
-      img{
-        border-radius: 22px;
-        margin-top: 40px;
-        width: 30%;
-      }
-  </style>
-
 </head>
 <body>
 
@@ -66,13 +14,19 @@
 
     <button @click="funzione('colore_bottone')">CAMBIA COLORE</button>
 
-    <h1 :class="colore_testo">{{testo_stampato}}</h1>
+    <div class="frame-testo">
+      <img :src="immagine" :class="visibile" alt="">
 
-    <img :src="immagine" alt="">
+      <p :class="colore_testo">{{testo_stampato}}</p>
+      <input type="text" v-bind:class="">
+    </div>
+
+<!--     <button @click="immagine()">IMMAGINE</button>
+ -->
+    
 
   
     
-
 
   </div>
   
